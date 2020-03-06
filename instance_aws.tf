@@ -6,7 +6,7 @@ resource "aws_instance" "instancelinux" {
   vpc_security_group_ids = [
     "sg-06678f94fa9ec164f",
   ]
-  tags = Name = "Codeherent"
+  tags = "{ Name = "Codeherent"}"
 }
 
 user_data ", " ami ", " root_block_device "]
