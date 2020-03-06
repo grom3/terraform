@@ -12,7 +12,5 @@ resource "aws_instance" "instancelinux" {
 }
 
 provider "aws" {
-  region     = eu-west-1
-  access_key = etea
-  secret_key = rezaraer
+  region = eu-west-1
 }
