@@ -13,3 +13,9 @@ user_data ", " ami ", " root_block_device "]
   }
 }
 " {}
+
+provider "aws" {
+  region = eu-west-1
+  access_key = 
+  secret_key = 
+}
