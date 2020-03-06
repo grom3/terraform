@@ -8,6 +8,7 @@ resource "aws_instance" "instancelinux" {
   ]
   tags = {
     Name = "Codeherent"
+    Owner = "JVANAN24"
   }
 }
 
