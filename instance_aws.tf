@@ -1,9 +1,8 @@
-variable "hostname" {
-  type = "string"
-}
+variable "hostname" {type = "string"}
+variable "instance_type" {type="string"}
 
 resource "aws_instance" "instancelinux" {
-  instance_type = "t2.micro"
+  instance_type = "${var.instance_type}"
   ami           = "ami-0ff760d16d9497662"
   key_name      = "formation-hpc"
   subnet_id     = "subnet-195cd142"
