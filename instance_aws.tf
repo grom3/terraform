@@ -1,3 +1,7 @@
+variable "hostname" {
+  type = "string"
+}
+
 resource "aws_instance" "instancelinux" {
   instance_type = "t2.micro"
   ami           = "ami-0ff760d16d9497662"
@@ -7,7 +11,7 @@ resource "aws_instance" "instancelinux" {
     "sg-06678f94fa9ec164f",
   ]
   tags = {
-    Name = "Codeherent"
+    Name = "${var.hostname}"
     Owner = "JVANAN24"
   }
 }
