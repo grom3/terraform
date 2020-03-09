@@ -15,7 +15,3 @@ resource "aws_instance" "instancelinux" {
     Owner = "JVANAN24"
   }
 }
-
-provider "aws" {
-  region = "eu-west-1"
-}
